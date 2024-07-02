@@ -1868,7 +1868,7 @@ table.wt-tablecategories tbody tr td figure img{
 .wt-historycontentcol{
 	float: left;
 	width: 100%;
-	line-height: ;
+	line-height: 100%;
 	list-style:none;
 	border:1px solid #eff2f5;
 }
