@@ -47,3 +47,15 @@ class Logout(View):
 class Navigator(View):
     def get(self, request):
         return render(request, 'user/navigator-register.html')
+    
+
+
+class CompanySignUp(View):
+    def get(self, request):
+        return render(request, 'user/company-signup.html')
+
+
+class FreelancerSignUp(View):
+    def get(self, request):
+        return render(request, 'user/freelancer-signup.html')
+    
