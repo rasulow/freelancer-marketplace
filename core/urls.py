@@ -9,4 +9,5 @@ urlpatterns = [
     path('navigator/', views.Navigator.as_view(), name='navigator'),
     path('company-signup/', views.CompanySignUp.as_view(), name='company-signup'),
     path('freelancer-signup/', views.FreelancerSignUp.as_view(), name='freelancer-signup'),
+    path('verification/', views.Verification.as_view(), name='verification'),
 ]

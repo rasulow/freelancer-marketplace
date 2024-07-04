@@ -59,3 +59,9 @@ class FreelancerSignUp(View):
     def get(self, request):
         return render(request, 'user/freelancer-signup.html')
     
+
+
+class Verification(View):
+    def get(self, request):
+        return render(request, 'user/verification.html')
+    
