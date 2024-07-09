@@ -53,6 +53,16 @@ class Navigator(View):
 class CompanySignUp(View):
     def get(self, request):
         return render(request, 'user/company-signup.html')
+    
+
+    def post(self, request):
+        name = request.POST.get('name')
+        ceo = request.POST.get('ceo')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        confirm_password = request.POST.get('confirm_password')
+        print(name, ceo, email, password, confirm_password)
+        return redirect('verification')
 
 
 class FreelancerSignUp(View):

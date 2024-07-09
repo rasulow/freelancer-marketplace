@@ -111,45 +111,48 @@
 										</div>
 									</div>
 								</div>
-								<div class="wt-categoryexpl">
-                                    <div style="width: 100%;display: flex;justify-content: center;">
-                                        <div class="form-group" style="width: 25%;margin: 0px 10px;">
-                                            <input type="text" name="name" class="form-control" placeholder="Company name" required>
-                                        </div>
-                                        <div class="form-group" style="width: 25%;margin: 0px 10px;">
-                                            <input type="text" name="ceo" class="form-control" placeholder="Company CEO" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
-                                        <div class="form-group" style="width: 51.70%;margin: 0px 10px;">
-                                            <input type="text" name="email" class="form-control" placeholder="Work email" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
-                                        <div class="form-group" style="width: 51.70%;margin: 0px 10px;">
-                                            <input type="password" name="password" class="form-control" placeholder="Password" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
-                                        <div class="form-group" style="max-width: 51.70%;margin: 0px 10px;">
-                                            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm password" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
-                                        <span class="wt-checkbox" style="max-width: 51.70%;">
-                                            <input id="wt-login" type="checkbox" name="rememberme">
-                                            <label for="wt-login">Yes, I understand and agree to the Worktern Terms of Service, including the User Agreement and Privacy Policy.</label>
-                                        </span>
-                                    </div>
+								<form method="POST">
+									{% csrf_token %}
+									<div class="wt-categoryexpl">
+										<div style="width: 100%;display: flex;justify-content: center;">
+											<div class="form-group" style="width: 35%;margin: 0px 10px;">
+												<input type="text" name="name" class="form-control" placeholder="Company name" required>
+											</div>
+											<div class="form-group" style="width: 35%;margin: 0px 10px;">
+												<input type="text" name="ceo" class="form-control" placeholder="Company CEO" required>
+											</div>
+										</div>
+										
+										<div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
+											<div class="form-group" style="width: 72.5%;margin: 0px 10px;">
+												<input type="text" name="email" class="form-control" placeholder="Work email" required>
+											</div>
+										</div>
+										
+										<div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
+											<div class="form-group" style="width: 72.5%;margin: 0px 10px;">
+												<input type="password" name="password" class="form-control" placeholder="Password" required>
+											</div>
+										</div>
+										
+										<div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
+											<div class="form-group" style="max-width: 72.5%;margin: 0px 10px;">
+												<input type="password" name="confirm_password" class="form-control" placeholder="Confirm password" required>
+											</div>
+										</div>
+										
+										<div style="width: 100%;display: flex;justify-content: center;margin: 20px 0px;">
+											<span class="wt-checkbox" style="max-width: 72.5%;">
+												<input id="wt-login" type="checkbox" name="rememberme">
+												<label for="wt-login">Yes, I understand and agree to the Worktern Terms of Service, including the User Agreement and Privacy Policy.</label>
+											</span>
+										</div>
 
-                                    <div class="wt-btnarea">
-                                        <a href="{% url 'verification' %}" class="wt-btn">Signup</a>
-                                    </div>
-								</div>
+										<div class="wt-btnarea">
+											<button type="submit" class="wt-btn do-login-button">Registration</button>
+										</div>
+									</div>
+								</form>
 							</div>
 						</div>
 					</section>
