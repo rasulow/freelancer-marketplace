@@ -59,8 +59,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'freelancer.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+# ! Send email verification
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'rasulov.olympusss@gmail.com'
+EMAIL_HOST_PASSWORD = 'B!n@ry183139'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
 
 DATABASES = {
     'default': {

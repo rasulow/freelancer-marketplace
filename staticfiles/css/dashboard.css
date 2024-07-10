@@ -1868,7 +1868,6 @@ table.wt-tablecategories tbody tr td figure img{
 .wt-historycontentcol{
 	float: left;
 	width: 100%;
-	line-height: ;
 	list-style:none;
 	border:1px solid #eff2f5;
 }
@@ -2748,7 +2747,6 @@ li.collapsed .wt-msgbtns .wt-msgbtn i.lnr-chevron-up:before{content: "\e874";}
 	padding: 0;
 	display: block !important;
 }
-.wt-titlemessages .wt-userlogedin:before{display: none;}
 .wt-titlemessages .wt-username h3 i{
 	color: #00cc8d;
 	font-size: 14px;

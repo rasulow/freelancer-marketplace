@@ -149,7 +149,6 @@
 	.wt-openmsg > .wt-dashboardboxtitle{display: none;}
 	.wt-openmsg > .wt-titlemessages{display: block;}
 	.wt-messagebox{display: none;}
-	.wt-userlogedin:before{display: none;}
 	.wt-dashboardsave{margin-top:30px; }
 }
 @media (max-width:800px){.wt-attachfilevtwo li{width: 50%;}}

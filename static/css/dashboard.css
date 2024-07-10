@@ -2748,7 +2748,6 @@ li.collapsed .wt-msgbtns .wt-msgbtn i.lnr-chevron-up:before{content: "\e874";}
 	padding: 0;
 	display: block !important;
 }
-.wt-titlemessages .wt-userlogedin:before{display: none;}
 .wt-titlemessages .wt-username h3 i{
 	color: #00cc8d;
 	font-size: 14px;
