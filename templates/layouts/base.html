@@ -25,20 +25,29 @@
 	<link rel="stylesheet" href="{% static 'css/transitions.css' %}">
 	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 	<script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+	<script src="{% static 'js/custom-main.js' %}"></script>
+	
 </head>
 <body class="">
+	
+	<!-- Notification start -->
+	{% include 'includes/notification.html' %}
+	<!-- Notification end -->
 	
 	<!-- Preloader Start -->
 	<div class="preloader-outer">
 		<div class="loader"></div>
 	</div>
 	<!-- Preloader End -->
-	
     <!-- Block Start -->
     {% block content %}
     {% endblock content %}
     <!-- Block End -->
+	
+
 
 	<script src="{% static 'js/vendor/jquery-3.3.1.js' %}"></script>
 	<script src="{% static 'js/vendor/jquery-library.js' %}"></script>
@@ -55,7 +64,6 @@
 	<script src="{% static 'js/tipso.js' %}"></script>
 	<script src="{% static 'js/jRate.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
-	<script src="{% static 'js/custom-main.js' %}"></script>
 </body>
 
 </html>

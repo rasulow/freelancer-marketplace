@@ -261,19 +261,4 @@
 		</div>
 		<!--Content Wrapper End-->
 	</div>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// Collect messages into a JavaScript array
-			const messages = [];
-			{% for message in messages %}
-				messages.push("{{ message|escapejs }}");
-			{% endfor %}
-			// If there are messages, display them in an alert
-			if (messages.length > 0) {
-				let alertMessages = messages.join('\n');
-				alert(alertMessages);
-			}
-		});
-	</script>
 {% endblock content %}
