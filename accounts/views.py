@@ -41,13 +41,13 @@ class Logout(View):
 
 class Navigator(View):
     def get(self, request):
-        return render(request, 'user/navigator-register.html')
+        return render(request, 'user/sign-up/navigator-register.html')
     
 
 
 class CompanySignUp(View):
     def get(self, request):
-        return render(request, 'user/company-signup.html')
+        return render(request, 'user/sign-up/company-signup.html')
     
 
     def post(self, request):
@@ -62,7 +62,7 @@ class CompanySignUp(View):
 
 class FreelancerSignUp(View):
     def get(self, request):
-        return render(request, 'user/freelancer-signup.html')
+        return render(request, 'user/sign-up/freelancer-signup.html')
     
     def post(self, request):
         first_name = request.POST.get('first_name')
@@ -98,4 +98,10 @@ class FreelancerSignUp(View):
 
 class Verification(View):
     def get(self, request):
-        return render(request, 'user/verification.html')
+        return render(request, 'user/sign-up/verification.html')
+    
+
+
+class Profile(View):
+    def get(self, request):
+        return render(request, 'user/profile/profile.html')
